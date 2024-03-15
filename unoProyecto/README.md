@@ -1,8 +1,8 @@
 # proyectosBIT
 
-### Primer proyecto calificable
+## Primer proyecto calificable
 
-### Hablará de Juan Manuel Ariza
+### Proyecto de html fusionando js y css que dará a conocer a Juan Manuel Ariza :)
 
 ###### Juan Manuel Ariza C.
 
