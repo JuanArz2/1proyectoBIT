@@ -1,3 +1,18 @@
+
+body {
+    font-family: "Ojuju", sans-serif, monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.fontBlack {
+    font-family: sans-serif, monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 #bgColor {
     background-color: rgba(113, 91, 68, 0.639);
 }
