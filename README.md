@@ -22,14 +22,6 @@
 
 √ https://github.com/JuanArz2
 
-√ mi Padre, Hernando, es una persona que siempre está molestando, se ríe y burla todo el tiempo, pero es bueno.
-mi Madre, Beatriz, es super hospitalaria y le gusta ayudar a los demás aún cuando sea difícil.
-Mi hna mayor, Carolina, es casada y tiene dos hijos, su niña nació hace 2 semanas!
-mi hno Daniel, el del medio, vive en Australia y es Mecánico autimotríz.
-y luego yo, tengo 24 años y soy cocinero, y ahora seré programador.
-mi novia se llama Gabriela es profesora y le gusta muuucho bailar, tristemente a mí no T.T
-tengo dos mascotas, una común y otra no, un perro y un lagarto (Pogona Vitticeps)
-
 √ El asunto al que más importancia le doy en mi vida es al espiritual, soy Testigo de Jehová y me gusta aprender de y estudiar la Biblia y predicar lo que aprendo y me es útil con las personas.
 
 √ Amo la pizza, me encanta cuando la masa es crocante y algo delgada, pero en especial cuando tiene buenos ingredientes.
