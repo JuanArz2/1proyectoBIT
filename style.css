@@ -1,5 +1,5 @@
 /* 
-√ Colores: #000814_Negro ; #0077b6_AzulJw ; rgb(242, 255, 253)_Blanco #6a994e_Verde ; #c8b6ff_Rosa.
+√ Colores: #000814_Negro ; #0077b6_AzulJw ; rgb(242, 255, 253)_Blanco #6a994e_Verde ; #c8b6ffaa_Rosa ; #0582ca77_FondoAzul.
 √ Font: "Ojuju", sans-serif, monospace ; Helvetica, sans-serif .
 */
 
@@ -8,72 +8,85 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --fuente-Size-Bigger: 23px;
+  --fuente-Style-Bold: bold;
+
+  --font: "Ojuju", sans-serif, monospace;
+  --font-JW: Helvetica, sans-serif;
+
+  --color-Negro: #000814;
+  --color-Blanco: rgb(242, 255, 253);
+  --color-Rosa: #c8b6ff;
+  --color-AzulJW: #0077b6;
+  --color-Fondo-Azul: #a2d2ff;
+  --color-Rosa-Transp: #c8b6ffaa;
+}
 
 /* Structure */
 body {
-  margin: 0;
-
-  font-family: "Ojuju", sans-serif, monospace;
+  font-family: var(--font);
   font-weight: 200;
   font-style: normal;
 
-  width: auto;
-  height: fit-content;
+  /* width: auto;
+  height: fit-content; */
 
-  background-color: #0582ca77;
-  color: #000814;
-  border: 1.5px solid #000814;
-
-  position: relative;
+  background-color: var(--color-Fondo-Azul);
+  color: var(--color-Negro);
 
   display: flex;
   flex-wrap: wrap;
+  gap: 0.1px;
 }
+
 header,
 nav,
 main,
 aside,
 footer {
-  background-color: #c8b6ffaa;
-  border: 0.1px solid #000814;
+  background-color: var(--color-Rosa-Transp);
   text-align: center;
 }
 header {
+  border-radius: 20px;
   height: 40px;
   width: 100%;
 }
 nav {
+  background-color: var(--color-Fondo-Azul);
+  font-size: var(--fuente-Size-Bigger);
+  font-weight: bold;
+  border: 0.6px solid var(--color-Negro);
   height: 40px;
-  width: 100%;
   position: fixed;
   margin-top: 40px;
+  z-index: 1;
+  border-radius: 20px;
 }
 main {
-  height: 800px;
+  border-top-left-radius: 20px;
+  height: auto;
+  min-height: 800px;
   width: 80%;
   position: relative;
+  padding-top: 40px;
 }
 aside {
+  border-top-right-radius: 20px;
   height: auto;
-  width: 20%;
   position: relative;
-  top: 40px;
+  padding-top: 40px;
 }
 footer {
   height: 40px;
   width: 100%;
   position: relative;
-  top: 0;
 }
 
-/* Font */
-.fontBlack {
-  font-weight: 400;
-  font-style: normal;
-}
 .jwFont {
-  font-family: Helvetica, sans-serif;
-  color: #0077b6;
+  font-family: var(--font-JW);
+  color: var(--color-AzulJW);
 }
 
 /* Teléfonos */
@@ -81,7 +94,13 @@ footer {
   body {
     font-size: 16px;
     font-weight: 300;
-    margin: 15% 10% 20% 10%;
+    margin: 5% 10% 20% 10%;
+  }
+  nav {
+    min-width: 80%;
+  }
+  aside {
+    min-width: 19.95%;
   }
 }
 /* Tabletas */
@@ -90,11 +109,23 @@ footer {
     font-size: 18px;
     margin: 5% 8% 10% 8%;
   }
+  nav {
+    min-width: 80%;
+  }
+  aside {
+    min-width: 19.95%;
+  }
 }
 /* Computadores */
 @media screen and (min-width: 1024px) {
   body {
     font-size: 20px;
-    margin: 4% 8% 10% 8%;
+    margin: 2% 8% 10% 8%;
+  }
+  nav {
+    min-width: 84%;
+  }
+  aside {
+    min-width: 19.99%;
   }
 }
