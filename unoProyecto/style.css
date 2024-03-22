@@ -1,24 +1,100 @@
+/* 
+√ Colores: #000814_Negro ; #0077b6_AzulJw ; rgb(242, 255, 253)_Blanco #6a994e_Verde ; #c8b6ff_Rosa.
+√ Font: "Ojuju", sans-serif, monospace ; Helvetica, sans-serif .
+*/
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Structure */
 body {
-    font-family: "Ojuju", sans-serif, monospace;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+  margin: 0;
+
+  font-family: "Ojuju", sans-serif, monospace;
+  font-weight: 200;
+  font-style: normal;
+
+  width: auto;
+  height: fit-content;
+
+  background-color: #0582ca77;
+  color: #000814;
+  border: 1.5px solid #000814;
+
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: #c8b6ffaa;
+  border: 0.1px solid #000814;
+  text-align: center;
+}
+header {
+  height: 40px;
+  width: 100%;
+}
+nav {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  margin-top: 40px;
+}
+main {
+  height: 800px;
+  width: 80%;
+  position: relative;
+}
+aside {
+  height: auto;
+  width: 20%;
+  position: relative;
+  top: 40px;
+}
+footer {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  top: 0;
 }
 
+/* Font */
 .fontBlack {
-    font-family: sans-serif, monospace;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+.jwFont {
+  font-family: Helvetica, sans-serif;
+  color: #0077b6;
 }
 
-#bgColor {
-    background-color: rgba(113, 91, 68, 0.639);
+/* Teléfonos */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15% 10% 20% 10%;
+  }
 }
-div, span {
-    color:rgb(39, 255, 183);
+/* Tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+    margin: 5% 8% 10% 8%;
+  }
 }
-.ajw {
-    color:rgb(24, 124, 255);
+/* Computadores */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    margin: 4% 8% 10% 8%;
+  }
 }
