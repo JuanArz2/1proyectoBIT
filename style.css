@@ -43,7 +43,7 @@ main,
 aside,
 footer {
   background-color: var(--color-Rosa-Transp);
-  text-align: justify;
+  /* text-align: justify; */
 }
 header {
   border-radius: 20px;
@@ -63,14 +63,15 @@ nav {
   margin-top: 59px;
   z-index: 1;
   border-radius: 20px;
+  text-align: center;
 }
 main {
   border-top-left-radius: 20px;
   height: auto;
   min-height: 800px;
-  width: 75%;
+  width: 80%;
   position: relative;
-  padding-top: 40px;
+  padding: 60px 20px 20px 20px;
 }
 aside {
   border-top-right-radius: 20px;
@@ -78,7 +79,7 @@ aside {
   height: auto;
   position: relative;
   padding-top: 40px;
-  text-align: right;
+  text-align: center;
 }
 footer {
   border-top: 0.6px solid var(--color-Negro);
@@ -90,6 +91,9 @@ footer {
   position: relative;
 }
 
+.fontAzul {
+  color: var(--color-AzulJW);
+}
 .fontAnchor {
   font-weight: bolder;
   text-decoration: none;
@@ -99,15 +103,12 @@ footer {
   color: var(--color-AzulJW);
 }
 .contenedorSection-Main {
-  border: 1px solid var(--color-Negro);
   height: auto;
   min-height: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
+  margin-bottom: 40px;
 }
 .sectionElement-Main {
   width: auto;
@@ -115,31 +116,47 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
-.circulo {
-  border-radius: 40% 40% 40% 40%;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+.noWrap {
+  flex-wrap: nowrap;
 }
-img {
-  width: 200px;
-  height: 200px;
+.videoPinkFloyd {
+  position: relative;
+  width: 700px;
+  left: 5%;
+}
+.imgPogona {
   position: relative;
   margin-top: 250px;
 }
-.movimiento:hover {
-  animation: rotar 3s;
+.circulo {
+  border-radius: 45%;
+  width: 200px;
+  height: 200px;
+}
+.movimiento {
+  animation: rotar 10s linear infinite;
+}
+.imgDiapositiva {
+  max-width: 2000px;
+  max-height: 2000px;
 }
 @keyframes rotar {
   0% {
     transform: rotate(0deg);
   }
+  25% {
+    transform: rotate(20deg);
+  }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
   }
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(0deg);
   }
 }
 /* Teléfonos */
@@ -147,19 +164,22 @@ img {
   body {
     font-size: 16px;
     font-weight: 300;
-    margin: 5% 10% 20% 10%;
+    margin: 0px;
   }
   nav {
     min-width: 80%;
   }
   aside {
-    min-width: 24.95%;
+    max-width: 19.95%; /* ARREGLAR */
   }
   img {
     margin-top: 1000px;
   }
+  .videoPinkFloyd {
+    width: 200px;
+  }
 }
-/* Tabletas */
+/* Tabletas ARREGLAR */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     font-size: 18px;
@@ -182,6 +202,6 @@ img {
     min-width: 84%;
   }
   aside {
-    min-width: 24.99%;
+    min-width: 19.99%;
   }
 }
